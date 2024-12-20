@@ -1,14 +1,14 @@
 import { redirectToLogin } from "./helperFuncs";
 import { browser } from "$app/environment";
 
-export let serverURL="https://api.frii.site"
+export let serverURL="https://is-app-top-backend.vercel.app"
 if(browser) {
   let subdomain = window.location.hostname.split(".")[0]
   if(subdomain === "canary") {
-    serverURL = "https://devserver.frii.site"
+    serverURL = "https://devserver.is-app.top"
   };
   if(localStorage.getItem("url_override")) {
-    serverURL = localStorage.getItem("url_override") ?? "https://api.frii.site";
+    serverURL = localStorage.getItem("url_override") ?? "https://is-app-top-backend.vercel.app";
   }
   console.debug("Switched server url to " + serverURL)
 }
