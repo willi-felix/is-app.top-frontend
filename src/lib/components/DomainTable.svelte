@@ -100,7 +100,7 @@
                                 <input
                                     disabled
                                     style="width: 100%; min-width:55px;"
-                                    value=".frii.site"
+                                    value=".is-app.top"
                                 />
                             </div>
                         {:else}
